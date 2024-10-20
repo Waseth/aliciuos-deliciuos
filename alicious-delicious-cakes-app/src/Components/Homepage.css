@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+.contact-button {
+    background-color: #d26a8e;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:-30px;
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    color: #d26a8e;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: #d26a8e;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d26a8e;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.hero-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #d26a8e;
+    margin-bottom: 10px;
+}
+
+.shop-button {
+    background-color: #d26a8e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.featured-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.featured-image img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+
+.about-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #d26a8e;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-logo {
+    height: 100px;
+    margin-left: 110px;
+    margin-top: -40px;
+    display: block;
+    border-radius:50%;
+    opacity: 1;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-left: 800px;
+    margin-top: -60px;
+}
+
+
+.nav-links li {
+    margin: 0 10px;
+}
+.featured-cakes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.cake-text{
+    margin-top:-20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 2s infinite;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+.card:hover {
+    animation: none;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
